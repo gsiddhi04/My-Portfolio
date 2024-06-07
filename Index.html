@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <header>
-        <h1>My Portfolio</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Left box for logo -->
+      <div class="left">
+        <div>Siddhi Gupta</div>
+      </div>
+      <!-- Mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="myprojects.html">My projects</a></li>
+          <li><a href="#foot">Contact Me</a></li>
+        </ul>
+      </div>
     </header>
 
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>Name: Siddhi Gupta</p>
-        <p>University: Indian Institue of Technology, Kanpur</p>
-        <p>Department: Material Science and Engineering</p>
-        <p>Career Interests: Web Development, Artificial Intelligence, Space Engineering.</p>
+    <section>
+      <div class="container">
+        <div class="item-1">
+          <img src="profile.jpg" alt="img not found" class="grid-image" />
+          <br />
+          <br />
+          <h3>Siddhi Gupta</h3>
+          <p>
+            Hello Everyone! I am an Undergraduate student at Indian Institute of
+            Technology Kanpur. Pursuing my B.Tech degree form here in Material
+            Science and Engineering Department.
+          </p>
+        </div>
+        <div class="item-2">
+          <h1>
+            My
+            <hr />
+            Portfolio
+          </h1>
+          <br />
+          <br />
+          <p>
+            Welcome to my portfolio! Here, you'll find a showcase of my skills,
+            experiences, and passion projects. Each piece tells a story of
+            dedication, creativity, and growth. Explore my journey, discover
+            what drives me, and see how I can bring value to your next project.
+            Let's create something amazing together!
+          </p>
+          <div class="btnstyl">
+            <a href="aboutme.html">
+            <button class="btn">Explore Now</button></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p>Degree Program: Bachelor's Of Technology</p>
-        <p>Expected Graduation Date: 31-04-2027</p>
-        <p>Class XII: Delhi Public School, Varanasi</p>
-        <p>Class X: Little Flower House, Kakkarmatta</p>
-        <p>91.1% in Class XII and 95% in class X</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Website of a Gym </p>
-        <p>Online Food delivery Website</p>
-        <p>IITK Mail CLient</p>
-        <p>Scholarship Website</p>
-        <p>IITK Data Portal</p>
-
-    </section>
-    <section id="extracurricular activities">
-        <h2>Extracurricular Activities</h2>
-        <p>Basketball</p>
-        <p>Swimming</p>
-        <p>Dance</p>
-        <p>Singing</p>
-        <p>Cooking</p>
-    </section>
-
-    <footer>
-        <p>Contact: siddhigupta1930@gmail.com</p>
-        <p>LinkedIn: www.linkedin.com/in/siddhi-gupta-0224a72aa</p>
+    <footer id="foot">
+      <div class="item">
+        <h3>Contact Me</h3>
+        <p>Feel free to reach out through any of the methods below:</p>
+        <ul>
+            <li><b>Email:</b> <a href="mailto:siddhigupta1930@gmail.com"><i>siddhigupta1930@gmail.com</i></a></li>
+            <li><b>Phone:</b> <a href="tel:+1234567890">+(91) 7355657779</a></li>
+            <li><b>LinkedIn: </b><a href="https://www.linkedin.com/in/gsiddhi19" target="_blank"><i>LinkedIn Profile</i></a></li>
+            <li><b>GitHub:</b> <a href="https://github.com/gsiddhi04" target="_blank"><i>GitHub Profile</i></a></li>
+        </ul>
+    </div>
     </footer>
-
-</body>
+  </body>
 </html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: grey;
+        color: white;
+      }
+
+      header {
+        background: black;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1em;
+        padding: 2em;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .project-card {
+        background: grey;
+        border-radius: 10px;
+        box-shadow: 0 0 10px white;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .project-card-content {
+        padding: 1em;
+        flex-grow: 1;
+      }
+
+      .project-card h3 {
+        margin-top: 0;
+      }
+
+      .project-card p {
+        flex-grow: 1;
+      }
+
+      .project-card a {
+        text-decoration: none;
+        color: #00aced;
+        padding: 0.5em 0;
+        display: inline-block;
+      }
+
+      footer {
+        background: black;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+      }
+
+      .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: white;
+        color: black;
+        padding: 0px 14px;
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: rgb(205, 237, 236);
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Projects</h1>
+    </header>
+
+    <section class="projects-container">
+      <div class="project-card">
+        <img src="mailclient.png" alt="Project 1 Image" />
+        <div class="project-card-content">
+          <h3>IITK Mail Client</h3>
+          <p>
+            This is my ongoing project which I have audited from Science and
+            Technology's Programming club. In this project we are using Flutter
+            and dart language to make a web application for the IIT Kanpur
+            community so that the users will get an ease to access the mails.
+            Link to the repository is added if you wish to view you can view by
+            clicking on the button provided.
+          </p>
+          <a
+            href="https://github.com/gsiddhi04/IITK-Mail-Client"
+            target="_blank"
+          >
+            <button class="btn">View Project</button>
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="leetcodeboard.jpg" alt="Project 2 Image" />
+        <div class="project-card-content">
+          <h3>LeetCodeBoard</h3>
+          <p>
+            This is my second on going project again from programming club from
+            IIT Kanpur. In this project, We are making a website using node js
+            and basic motivation behind this project is to learn node js and
+            deploy the website from vercel. Link to the repository is added if
+            you wish to view you can view by clicking on the button provided.
+          </p>
+          <a href="https://github.com/gsiddhi04/leetcodeboard" target="_blank">
+            <button class="btn">View Project</button>
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="ebay.png" alt="Project 3 Image" />
+        <div class="project-card-content">
+          <h3>Campus Ebay</h3>
+          <p>
+            This is the project in which I had made a web application using
+            flutter and dart. This is application which deals with the sell and
+            buy of coolers, mattress, and cycles in which seniors sell their
+            equipments and juniors who are in need buy the second hand items. It
+            also includes a chat facility between buyer and seller for clarity
+            and better communication. Link to the repository is added if you
+            wish to view you can view by clicking on the button provided.
+          </p>
+          <a
+            href="https://github.com/gsiddhi04/campus_ebay_iitk"
+            target="_blank"
+          >
+            <button class="btn">View Project</button>
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="media.jpg" alt="Project 4 Image" />
+        <div class="project-card-content">
+          <h3>Social Media Profile Page</h3>
+          <p>
+            This is a sample social media page type of webpage, more like
+            instagram, where one can see their profile pictures and following ,
+            followers and number of posts. By clicking on the buttons they can
+            switch on various options and make use of it. Link to the repository
+            is added if you wish to view you can view by clicking on the button
+            provided.
+          </p>
+          <a href="https://github.com/gsiddhi04/AnC-Secy" target="_blank">
+            <button class="btn">View Project</button>
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="scholarship.jpg" alt="Project 5 Image" />
+        <div class="project-card-content">
+          <h3>Scholarship Details</h3>
+          <p>
+            This is the project in which I had made a Scholarship website, for
+            the admin use. It open with the admin login, and basically used to
+            add, remove and view the Scholarships. Link to the repository is
+            added if you wish to view you can view by clicking on the button
+            provided.
+          </p>
+          <a href="https://github.com/gsiddhi04/IR-TASK" target="_blank">
+            <button class="btn">View Project</button>
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="counter.jpeg" alt="Project 6 Image" />
+        <div class="project-card-content">
+          <h3>Counter App</h3>
+          <p>
+            This is just a sample or test project which i tried after learning
+            react.js . Not a much interesting project. It comprises a webpage
+            which will redirect to a calculator which performs simple addition,
+            subtraction, multiplication and division. Link to the repository is
+            added if you wish to view you can view by clicking on the button
+            provided.
+          </p>
+          <a href="https://github.com/gsiddhi04/counter-app" target="_blank">
+            <button class="btn">View Project</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Siddhi Gupta. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
