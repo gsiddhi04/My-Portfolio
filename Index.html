@@ -9,10 +9,20 @@
   </head>
 
   <script>
-    document.getElementById("nav-toggle").addEventListener("click", function () {
-      document.getElementById("nav-section").classList.toggle("hidden");
+    const toggleBtn = document.getElementById("nav-toggle");
+    const navSection = document.getElementById("nav-section");
+
+    document.querySelectorAll('.sidebar a').forEach(link => {
+      link.addEventListener('click', () => {
+        navSection.classList.add('hidden');
+      });
+    });
+
+    toggleBtn.addEventListener("click", () => {
+      navSection.classList.toggle("hidden");
     });
   </script>
+
 
 
   <body>
