@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Siddhi Gupta</title>
     <link rel="stylesheet" href="styles.css" />
+  
   </head>
+
+  <script>
+    document.getElementById("nav-toggle").addEventListener("click", function () {
+      document.getElementById("nav-section").classList.toggle("hidden");
+    });
+  </script>
+
+
   <body>
     <header class="header">
       <!-- Left box for logo -->
@@ -15,11 +24,24 @@
       <!-- Mid box for navbar -->
       <div class="mid">
         <ul class="navbar">
-          <li><a href="#" class="active">Home</a></li>
+          <li
+          ><a href="#" class="active">Home</a></li>
           <li><a href="aboutme.html">About Me</a></li>
           <li><a href="myprojects.html">My projects</a></li>
           <li><a href="#foot">Contact Me</a></li>
         </ul>
+
+        <div class="sidebar">
+          <button id="nav-toggle" style="color: white ; background-color:black ; border:none">☰</button>
+          <nav id="nav-section" class="hidden">
+            <ul class="navbar">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="aboutme.html">About Me</a></li>
+              <li><a href="myprojects.html">My projects</a></li>
+              <li><a href="#foot">Contact Me</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -52,8 +74,7 @@
             Let's create something amazing together!
           </p>
           <div class="btnstyl">
-            <a href="aboutme.html">
-            <button class="btn">Explore Now</button></a>
+            <a href="aboutme.html"> <button class="btn">Explore Now</button></a>
           </div>
         </div>
       </div>
@@ -64,12 +85,27 @@
         <h3>Contact Me</h3>
         <p>Feel free to reach out through any of the methods below:</p>
         <ul>
-            <li><b>Email:</b> <a href="mailto:siddhigupta1930@gmail.com"><i>siddhigupta1930@gmail.com</i></a></li>
-            <li><b>Phone:</b> <a href="tel:+1234567890">+(91) 7355657779</a></li>
-            <li><b>LinkedIn: </b><a href="https://www.linkedin.com/in/gsiddhi19" target="_blank"><i>LinkedIn Profile</i></a></li>
-            <li><b>GitHub:</b> <a href="https://github.com/gsiddhi04" target="_blank"><i>GitHub Profile</i></a></li>
+          <li>
+            <b>Email:</b>
+            <a href="mailto:siddhigupta1930@gmail.com"
+              ><i>siddhigupta1930@gmail.com</i></a
+            >
+          </li>
+          <li><b>Phone:</b> <a href="tel:+1234567890">+(91) 7355657779</a></li>
+          <li>
+            <b>LinkedIn: </b
+            ><a href="https://www.linkedin.com/in/gsiddhi19" target="_blank"
+              ><i>LinkedIn Profile</i></a
+            >
+          </li>
+          <li>
+            <b>GitHub:</b>
+            <a href="https://github.com/gsiddhi04" target="_blank"
+              ><i>GitHub Profile</i></a
+            >
+          </li>
         </ul>
-    </div>
+      </div>
     </footer>
   </body>
 </html>

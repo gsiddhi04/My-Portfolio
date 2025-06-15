@@ -52,7 +52,13 @@ header{
     /* border: 2px solid green; */
 }
 
+.sidebar{
+    display: none;
+}
 
+.hidden {
+  display: none;
+}
 
 .navbar {
     display: inline-block;
@@ -181,3 +187,88 @@ footer {
 .item a:hover {
     text-decoration: underline;
 }
+
+
+@media screen and (max-width: 768px) {
+  /* Fix header layout */
+  .left {
+    position: static;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .mid {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar {
+    display: none; /* Hide original navbar */
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .sidebar {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  #nav-section {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: black;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  #nav-section ul {
+    padding: 0;
+  }
+
+  #nav-section ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+  }
+
+  /* Make container stack vertically */
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .item-1,
+  .item-2 {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .item-1 img {
+    height: auto;
+    width: 100%;
+  }
+
+  .btnstyl {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
